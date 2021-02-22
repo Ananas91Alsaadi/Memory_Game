@@ -102,19 +102,6 @@ function draw() {
 
   }
 
-  /*  rights = sort(rights);
-   for (let f = 1; f < picsort.length; f++) {
-      if (picsort[f] != rights[f]) {
-        win = false;     text(cou + " tries", 200, 620);
-  break;
-      } else {win = true;}
-    }
-    if (win) {
-      text("Done in " + cou + " tries", 150, 620);
-    }*/
-  
-
-
 if (nextBox) {  
     buttonNext.position(100, 600);
 
