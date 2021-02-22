@@ -48,22 +48,27 @@ function setup() {
   squaresBox();
   
   buttonNext = createButton('Next level');
-  buttonNext.position(-500, 600);
+      buttonNext.position(-50, 600);
+
   buttonNext.mousePressed(NextLevel);
 
-
-  buttonAgain = createButton('Play again');
-  buttonAgain.position(430, 600);
+    buttonAgain = createButton('Play again');
   buttonAgain.mousePressed(PlayAgain);
+
+
 
 }
 
 function draw() {
+ 
+  
   let canv = createCanvas(600 + newCol, 700);
   canv.center("horizontal");
-
-  background(200);
   
+  
+  background(200);
+
+  buttonAgain.position(windowWidth/2+150, 600);
 
 
   for (let i = 0; i < boxe.length; i++) {
@@ -103,12 +108,25 @@ function draw() {
 
   }
 
+  /*  rights = sort(rights);
+   for (let f = 1; f < picsort.length; f++) {
+      if (picsort[f] != rights[f]) {
+        win = false;     text(cou + " tries", 200, 620);
+  break;
+      } else {win = true;}
+    }
+    if (win) {
+      text("Done in " + cou + " tries", 150, 620);
+    }*/
+  
+
+
 if (nextBox) {  
-    buttonNext.position(100, 600);
+    buttonNext.position(windowWidth/2-250, 600);
 
 
 } else {
-    buttonNext.position(-500, 600);
+    buttonNext.position(-50, 600);
 
 
 }
