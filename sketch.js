@@ -59,7 +59,8 @@ function setup() {
 }
 
 function draw() {
-  createCanvas(600 + newCol, 700);
+  let canv = createCanvas(600 + newCol, 700);
+  canv.center("horizontal");
 
   background(200);
   
