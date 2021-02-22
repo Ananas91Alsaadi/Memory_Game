@@ -48,7 +48,7 @@ function setup() {
   squaresBox();
   
   buttonNext = createButton('Next level');
-      buttonNext.position(-50, 600);
+      buttonNext.position(-1000, 600);
 
   buttonNext.mousePressed(NextLevel);
 
@@ -126,7 +126,7 @@ if (nextBox) {
 
 
 } else {
-    buttonNext.position(-50, 600);
+    buttonNext.position(-1000, 600);
 
 
 }
